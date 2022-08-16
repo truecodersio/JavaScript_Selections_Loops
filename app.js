@@ -30,9 +30,17 @@ let x=1;
 do{ if(x%2==1){
    console.log(x);}
    x++;
+}while(x<=100)
 
+// let whileI=0;
+// while(whileI<=100)
+// {
+//     if(whileI%2==1)  {
+//         console.log(whileI)
+//     }
 
-}while(x<100)
+// }
+
 let h=1;
 while(h<=100){
     if (h%3==0 && h%5==0)
@@ -54,7 +62,7 @@ for(let f=0;f<=n;f++)
     if(f==value)
     {console.log("Found value",f);
     break;}
-    else if(f==n) {
+    else if(f==n) {   
         console.log("Did not find value");
     }
 
@@ -63,17 +71,19 @@ for(let f=0;f<=n;f++)
 
 
 console.log("EXERCISE 5:\n==========\n");
+
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-let m = Math.round(Math.random() * (1000 - 1) + 1);
+let m = Math.round(Math.random() * (1000 - 1) + 1);    
 let start = Math.round(Math.random() * (10 - 1) + 1);
-for(start=1;start<=m;start++)
-{
-    if (start%3==0 && start%5==0)
-    {console.log("FizzDivisorBuzzDivisor",start);}
-    else if (start%5==0)
-   { console.log("buzzDivisor",start);}
-    else if (start%3==0 )
-   { console.log("FizzDivisor",start);}
 
-}  
+for(let l=start;l<=m;l++)
+{
+    if (l%fizzDivisor==0 && l%buzzDivisor==0)
+    {console.log(l,`FizzDuzz ${fizzDivisor} and ${buzzDivisor}`);}
+    else if (l%buzzDivisor==0)
+   { console.log(l,`buzz = ${buzzDivisor}`);}
+    else if (l%fizzDivisor==0 )
+   { console.log(l,`Fizz = ${fizzDivisor}`);}
+
+}
