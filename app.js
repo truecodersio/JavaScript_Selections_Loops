@@ -27,7 +27,12 @@ for (let j=1;j<=100;j++)
 }
 console.log("EXERCISE 3:\n==========\n");
 let x=1;
+do{ if(x%2==1){
+   console.log(x);}
+   x++;
 
+
+}while(x<100)
 let h=1;
 while(h<=100){
     if (h%3==0 && h%5==0)
