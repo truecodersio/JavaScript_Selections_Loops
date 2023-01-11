@@ -59,8 +59,8 @@ We already completed the FIZZBUZZ challenge. Now repeat the logic for the FIZZBU
 ```js
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-let n = Math.round(Math.random() * (1000 - 1) + 1);
 let start = Math.round(Math.random() * (10 - 1) + 1);
+let end = Math.round(Math.random() * (1000 - 100) + 100);
 ```
 
 2. Re-implement exercise 2, but use `start` as the initial value for `i`, `n` as the range limit in `i <= n`, and `fizzDivisor` and `buzzDivisor` as the dependent values for determining "FIZZ" and "BUZZ" print messages.
